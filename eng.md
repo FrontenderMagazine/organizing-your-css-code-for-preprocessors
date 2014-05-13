@@ -204,6 +204,8 @@ takes almost everything what we’ve discussed and mixes it into one architectur
 Personally, I sometimes find this structure to be a little overkill. On the 
 other hand, I don’t work on many large-scaleprojects.
 
+##A last word
+
 These are merely examples of architectures. I have yet to discover the ‘
 perfect’ one, if one exists. Even if it does, it is a personal preference anyway.
 Either way, it’s an important matter to think about thoroughly. If you can avoid
