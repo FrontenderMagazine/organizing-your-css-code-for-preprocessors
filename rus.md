@@ -33,13 +33,54 @@ Sass файлы (т.е. .scss), несмотря на это, они легко 
 
 ###Функциональное распределение
 
+*   /base 
+*   _mixins.scss
+*   _variables.scss
+*   screen.scss
+
+####Достоинства
+
+*   Красивый список примесей и переменных
+
+####Недостатки
+
+*    Все стили в одном файле
+
+####Вывод
+
+###Распределение "Катана"
+
+*   /base 
+*   /sections 
+    *   _header.scss
+    *   _content.scss
+    *   _footer.scss
+    *   _sidebar.scss
+    *   _modals.scss
+*   _mixins.scss
+*   _variables.scss
+*   screen.scss
+
 ####Достоинства
 
 ####Недостатки
 
 ####Вывод
 
-###Функциональное распределение
+###Шаблонное или страничное распределение
+
+*   /base 
+*   /templates 
+    *   _category.scss
+    *   _footer.scss
+    *   _header.scss
+    *   _index.scss
+    *   _page.scss
+    *   _single.scss
+*   /pages 
+*   _mixins.scss
+*   _variables.scss
+*   screen.scss
 
 ####Достоинства
 
@@ -47,7 +88,18 @@ Sass файлы (т.е. .scss), несмотря на это, они легко 
 
 ####Вывод
 
-###Функциональное распределение
+###Дизайн терминология
+
+*   _normalize.scss
+*   _buttons.scss
+*   _footer.scss
+*   _grid.scss
+*   _header.scss
+*   _icons.scss
+*   _navigation.scss
+*   _typography.scss
+*   screen.scss
+
 
 ####Достоинства
 
@@ -55,20 +107,48 @@ Sass файлы (т.е. .scss), несмотря на это, они легко 
 
 ####Вывод
 
-###Функциональное распределение
+###Коктейль "Хьюго"
+
+Чуть ранее в этом году Хьюго описал свою Sass архитектуру. Оказалось это смесь всего что мы обсуждали ранее.
+
+*   /base 
+    *   _normalize.scss
+    *   _typography.scss
+*   /components 
+    *   _buttons.scss
+    *   _navigation.scss
+*   /helpers 
+    *   _mixins.scss
+    *   _variables.scss
+*   /layout 
+    *   _grid.scss
+    *   _header.scss
+    *   _footer.scss
+*   /pages 
+*   /themes 
+*   /vendors 
+    *   _bootstrap.scss
+    *   _jquery-ui.scss
+*   main.scss
 
 ####Достоинства
 
-####Недостатки
-
-####Вывод
-
-###Функциональное распределение
-
-####Достоинства
+*   Маленькие файлы
+*   Выглядит организовано
 
 ####Недостатки
 
+*   Слишком много файлов и папок
+
 ####Вывод
+
+Данная архитектура хорошо работает на больших проектах. Как я уже заметил ранее, это
+смесь всего, что мы обсуждали выше. Иногда я нахожду данную архитектуру слегка
+перегруженной. С другой стороны я не работал над большим количеством масштабируемых
+проектов.
 
 ##Последнее слово
+
+ [1]: http://flippinawesome.org/authors/tim-severien
+ [2]: http://css-tricks.com/video-screencasts/124-a-modern-web-designers-workflow/
+ [3]: http://www.sitepoint.com/architecture-sass-project/
